@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Portal | Project 4</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.4/dist/gsap.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    <div class="bg-lines"></div>
+    
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span>NEXUS</span>
+                    <span class="highlight">GAMING</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="active"><a href="#home">Home</a></li>
+                        <li><a href="#games">Games</a></li>
+                        <li><a href="#tournaments">Tournaments</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#store">Store</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="notification-btn">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </button>
+                    <button class="menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Welcome to the <span class="highlight">Next Level</span> of Gaming</h1>
+                    <p>Join our gaming community, compete in tournaments, and explore the latest games with cutting-edge graphics and immersive gameplay.</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary">Join Now</a>
+                        <a href="#" class="btn btn-secondary">Explore Games</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-value">500+</div>
+                            <div class="stat-label">Games</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">10M+</div>
+                            <div class="stat-label">Players</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">$2M</div>
+                            <div class="stat-label">Prize Pool</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="glow-effect"></div>
+                    <img src="https://images.unsplash.com/photo-1640955014216-75201056c829?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gaming Setup">
+                </div>
+            </div>
+        </section>
+        
+        <section id="featured" class="featured">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured <span class="highlight">Games</span></h2>
+                    <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="game-cards">
+                    <div class="game-card">
+                        <div class="game-card-image">
+                            <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Game 1">
+                            <div class="game-card-overlay"></div>
+                        </div>
+                        <div class="game-card-content">
+                            <div class="game-card-platform">PC / Console</div>
+                            <h3>Cybernetic Horizon</h3>
+                            <div class="game-card-meta">
+                                <div class="game-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.8</span>
+                                </div>
+                                <div class="game-genre">Action RPG</div>
+                            </div>
+                            <a href="#" class="btn btn-primary">View Game</a>
+                        </div>
+                    </div>
+                    
+                    <div class="game-card">
+                        <div class="game-card-image">
+                            <img src="https://images.unsplash.com/photo-1560419015-7c427e8ae5ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Game 2">
+                            <div class="game-card-overlay"></div>
+                        </div>
+                        <div class="game-card-content">
+                            <div class="game-card-platform">PC / Mobile</div>
+                            <h3>Neon Syndicate</h3>
+                            <div class="game-card-meta">
+                                <div class="game-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.5</span>
+                                </div>
+                                <div class="game-genre">Strategy</div>
+                            </div>
+                            <a href="#" class="btn btn-primary">View Game</a>
+                        </div>
+                    </div>
+                    
+                    <div class="game-card">
+                        <div class="game-card-image">
+                            <img src="https://images.unsplash.com/photo-1605899435973-ca2d1a8431cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Game 3">
+                            <div class="game-card-overlay"></div>
+                        </div>
+                        <div class="game-card-content">
+                            <div class="game-card-platform">Console Exclusive</div>
+                            <h3>Quantum Nexus</h3>
+                            <div class="game-card-meta">
+                                <div class="game-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9</span>
+                                </div>
+                                <div class="game-genre">FPS</div>
+                            </div>
+                            <a href="#" class="btn btn-primary">View Game</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="tournaments" class="tournaments">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Live <span class="highlight">Tournaments</span></h2>
+                    <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="tournament-cards">
+                    <div class="tournament-card">
+                        <div class="tournament-header">
+                            <div class="tournament-game">
+                                <img src="https://images.unsplash.com/photo-1560419015-7c427e8ae5ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Tournament Game">
+                                <h3>Neon Syndicate</h3>
+                            </div>
+                            <div class="tournament-prize">
+                                <div class="prize-pool">$250,000</div>
+                                <div class="prize-label">Prize Pool</div>
+                            </div>
+                        </div>
+                        <div class="tournament-details">
+                            <div class="tournament-info">
+                                <div class="info-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>128 Teams</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>June 15, 2025</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Online</span>
+                                </div>
+                            </div>
+                            <div class="tournament-status">
+                                <div class="status-indicator live"></div>
+                                <span>Live Now</span>
+                            </div>
+                        </div>
+                        <div class="tournament-actions">
+                            <a href="#" class="btn btn-primary">Watch Live</a>
+                            <a href="#" class="btn btn-secondary">Tournament Info</a>
+                        </div>
+                    </div>
+                    
+                    <div class="tournament-card">
+                        <div class="tournament-header">
+                            <div class="tournament-game">
+                                <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Tournament Game">
+                                <h3>Cybernetic Horizon</h3>
+                            </div>
+                            <div class="tournament-prize">
+                                <div class="prize-pool">$500,000</div>
+                                <div class="prize-label">Prize Pool</div>
+                            </div>
+                        </div>
+                        <div class="tournament-details">
+                            <div class="tournament-info">
+                                <div class="info-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>64 Teams</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>July 5, 2025</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Los Angeles, CA</span>
+                                </div>
+                            </div>
+                            <div class="tournament-status">
+                                <div class="status-indicator upcoming"></div>
+                                <span>Registration Open</span>
+                            </div>
+                        </div>
+                        <div class="tournament-actions">
+                            <a href="#" class="btn btn-primary">Register Now</a>
+                            <a href="#" class="btn btn-secondary">Tournament Info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="news" class="news">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Latest <span class="highlight">News</span></h2>
+                    <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="news-grid">
+                    <div class="news-item large">
+                        <div class="news-image">
+                            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="News 1">
+                        </div>
+                        <div class="news-content">
+                            <div class="news-category">Industry News</div>
+                            <h3>Next-Gen Console Announced with Revolutionary Graphics Technology</h3>
+                            <p>The next generation of gaming consoles has been revealed, featuring unprecedented graphics capabilities and lightning-fast load times.</p>
+                            <div class="news-meta">
+                                <div class="news-date">June 2, 2025</div>
+                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-image">
+                            <img src="https://images.unsplash.com/photo-1569098644584-210bcd375b59?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="News 2">
+                        </div>
+                        <div class="news-content">
+                            <div class="news-category">eSports</div>
+                            <h3>Team Nova Wins World Championship</h3>
+                            <div class="news-meta">
+                                <div class="news-date">May 28, 2025</div>
+                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-image">
+                            <img src="https://images.unsplash.com/photo-1567027757540-7b572280fa22?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="News 3">
+                        </div>
+                        <div class="news-content">
+                            <div class="news-category">Game Updates</div>
+                            <h3>Cybernetic Horizon: New DLC Release Date</h3>
+                            <div class="news-meta">
+                                <div class="news-date">May 25, 2025</div>
+                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="join" class="join-community">
+            <div class="container">
+                <div class="join-content">
+                    <h2>Join Our Gaming <span class="highlight">Community</span></h2>
+                    <p>Connect with millions of gamers, participate in tournaments, and stay updated with the latest gaming news and events.</p>
+                    <div class="join-stats">
+                        <div class="join-stat">
+                            <div class="join-stat-value">10M+</div>
+                            <div class="join-stat-label">Active Players</div>
+                        </div>
+                        <div class="join-stat">
+                            <div class="join-stat-value">5K+</div>
+                            <div class="join-stat-label">Daily Tournaments</div>
+                        </div>
+                        <div class="join-stat">
+                            <div class="join-stat-value">50+</div>
+                            <div class="join-stat-label">Countries</div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">Sign Up Now</a>
+                </div>
+                <div class="join-image">
+                    <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gaming Community">
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <span>NEXUS</span>
+                        <span class="highlight">GAMING</span>
+                    </div>
+                    <p>The ultimate destination for gamers worldwide.</p>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-nav-group">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Games</a></li>
+                            <li><a href="#">Tournaments</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Store</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 Nexus Gaming. All rights reserved.</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitch"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="back-to-main">
+        <a href="../index.html">Back to Main Site</a>
+    </div>
+</body>
+</html> 
